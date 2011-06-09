@@ -38,7 +38,7 @@ void WEAK  UsageFault_Handler(void);
 void WEAK  SVC_Handler(void);       
 void WEAK  DebugMon_Handler(void);  
 void WEAK  PendSV_Handler(void);    
-void WEAK  NombreExotico1(void);   
+void WEAK  SysTick_Handler(void);   
 void WEAK  WDT_IRQHandler(void);     
 void WEAK  TIMER0_IRQHandler(void);  
 void WEAK  TIMER1_IRQHandler(void);  
@@ -113,7 +113,7 @@ void (* const g_pfnVectors[])(void) =
   DebugMon_Handler,          /*!< Debug Monitor Handler                       */
   0,                         /*!< Reserved                                    */
   PendSV_Handler,            /*!< PendSV Handler                              */
-  NombreExotico1,           /*!< SysTick Handler                             */
+  SysTick_Handler,           /*!< SysTick Handler                             */
   
   /*----------External Exceptions---------------------------------------------*/
   WDT_IRQHandler,            /*!<  0: Watchdog Timer                          */
