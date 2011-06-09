@@ -1,0 +1,8 @@
+Generic Makefile Toolchain for Cortex M3
+----------------------------------------
+
+This is generic make scripts and project templates for cortex M3 and CodeSourcery G++ Lite (bare metal)
+
+Currently support
+-----------------
+  * LPC17xx
