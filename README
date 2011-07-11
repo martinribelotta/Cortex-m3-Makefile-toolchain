@@ -6,3 +6,4 @@ This is generic make scripts and project templates for cortex M3 and CodeSourcer
 Currently support
 -----------------
   * LPC17xx
+  * STM32 Connectivity line
