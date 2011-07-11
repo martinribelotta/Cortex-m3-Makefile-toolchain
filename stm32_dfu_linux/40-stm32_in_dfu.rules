@@ -1,0 +1,8 @@
+ACTION!="add|change", GOTO="stm32_in_dfu_rules_end"
+SUBSYSTEM!="usb", GOTO="stm32_in_dfu_rules_end"
+ENV{DEVTYPE}!="usb_device", GOTO="stm32_in_dfu_rules_end"
+
+# Section5 ICEbear
+ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="664", GROUP="plugdev"
+
+LABEL="stm32_in_dfu_rules_end"

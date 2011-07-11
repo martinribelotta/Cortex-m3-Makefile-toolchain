@@ -1,0 +1,20 @@
+Installation stript of UDEV rules for STM32 bootloader in DFU mode
+------------------------------------------------------------------
+
+This directory contain the UDEV rule to add STM32 device bootloader
+in dfu mode to plugdev group when this device is connected.
+
+For installation run (**as root**)
+
+sh ./install.sh
+
+In ubuntu
+
+sudo sh ./install.sh
+
+The rule is write for stm32f105r8t6 with VID,PID=0x0483,0xdf11.
+If your device is not recogniced, add same as:
+
+ATTRS{idVendor}=="XXXX", ATTRS{idProduct}=="YYYY", MODE="664", GROUP="plugdev"
+
+above of line 43 of the "install.sh" script
